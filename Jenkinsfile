@@ -41,7 +41,7 @@ pipeline {
         stage('OCI BnP') {
           steps {
             container('kaniko') {
-              sh '/kaniko/executor -c `pwd`/Dockerfile -c `pwd` --insecure --skip-tls-verify --cache=true --destination=docker.io/jlargaespada/dso-demo'
+              sh '/kaniko/executor -f `pwd`/Dockerfile -c `pwd` --insecure --skip-tls-verify --cache=true --destination=docker.io/jlargaespada/dso-demo'
             }
           }
         }
