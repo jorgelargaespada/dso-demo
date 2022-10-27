@@ -37,7 +37,7 @@ pipeline {
           }
         post {
           always {
-            archiveArtifacts allowEmptyArchive: true, artifcats: 'target/dependency-check-report.html', fingerprint: true, onlyIfSuccess: true
+            archiveArtifacts allowEmptyArchive: true, artifacts: 'target/dependency-check-report.html', fingerprint: true, onlyIfSuccess: true
           }
         }
         }
