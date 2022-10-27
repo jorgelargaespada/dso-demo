@@ -12,7 +12,7 @@ ENV HOME /home/$USER
 RUN adduser -D $USER && \
     chown $USER:$USER /run/demo.jar
 
-HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 --start-period=20s \
+HEALTHCHECK --interval=30s --timeout=30s --start-period=20s --retries=3  \
     CMD [ "curl -f http://localhost:8080/ || exit 1" ]
 USER $USER
 EXPOSE 8080
