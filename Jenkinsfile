@@ -104,7 +104,7 @@ pipeline {
         stage('Image Linting') {
           steps {
             container('docker-tools') {
-              sh 'dockle docker.io/jlargaespada/dso-demo:v5'
+              sh 'dockle docker.io/jlargaespada/dso-demo'
             }
 
           }
@@ -112,7 +112,7 @@ pipeline {
         stage('Image Scan') {
           steps {
             container('docker-tools') {
-              sh 'trivy image --exit-code 1 jlargaespada/dso-demo:v5'
+              sh 'trivy image --exit-code 1 jlargaespada/dso-demo'
             }
           }
         }
