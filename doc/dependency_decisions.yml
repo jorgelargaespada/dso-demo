@@ -18,6 +18,12 @@
     :versions: []
     :when: 2020-05-31 15:26:48.756587000 Z
 - - :permit
+  - New BSD
+  - :who: 
+    :why: 
+    :versions: []
+    :when: 2020-05-31 15:26:48.756587000 Z
+- - :permit
   - BSD License 3
   - :who: 
     :why: 
@@ -41,14 +47,14 @@
     :why: 
     :versions:
     - 1.2.11
-    :when: 2022-10-26 15:27:29.688403000 Z
+    :when: 2022-10-26 
 - - :approve
   - logback-classic
   - :who: 
     :why: 
     :versions:
     - 1.2.11
-    :when: 2022-10-26 15:27:29.688403000 Z
+    :when: 2022-10-26
 - - :approve
   - jakarta.xml.bind-api
   - :who: 
