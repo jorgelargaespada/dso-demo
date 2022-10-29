@@ -112,13 +112,13 @@ pipeline {
 
           }
         }
-        stage('Image Scan') {
-          steps {
-            container('docker-tools') {
-              sh 'trivy image --exit-code 1 jlargaespada/dso-demo'
-            }
-          }
-        }
+        // stage('Image Scan') {
+        //   steps {
+        //     container('docker-tools') {
+        //       sh 'trivy image --exit-code 1 jlargaespada/dso-demo'
+        //     }
+        //   }
+        // }
       }
     }
     stage('Deploy to Dev') {
