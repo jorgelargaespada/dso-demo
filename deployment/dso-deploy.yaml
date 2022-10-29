@@ -18,6 +18,7 @@ spec:
         app: dso-demo
     spec:
       automountServiceAccountToken: false
+      serviceAccountName: dso-demo
       containers:
       - image: jlargaespada/dso-demo:v5
         name: dso-demo
